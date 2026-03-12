@@ -19,7 +19,6 @@ sites:
       - 200
       - 401
 
-
 notification:
   email:
     to: $NOTIFICATION_EMAIL
@@ -32,7 +31,7 @@ assignees:
 
 status-website:
   cname: status.goletro.com
-  name: Goletro Status
+  name: " "
   logoUrl: https://goletro.com/logo.svg
   introTitle: "**Goletro** Service Status"
   introMessage: Real-time uptime monitoring for Goletro and its services. Updated every 5 minutes.
@@ -45,5 +44,16 @@ status-website:
       href: https://goletro.com/contact
   customBodyHtml: |
     <style>
-      .subscribe-form, .notification-form, [class*="subscribe"], [class*="Subscribe"] { display: none !important; }
+      .subscribe-form, .notification-form,
+      [class*="subscribe"], [class*="Subscribe"] { display: none !important; }
+      footer p, footer a,
+      p:has(a[href*="upptime"]),
+      p:has(a[href*="github"]) { display: none !important; }
     </style>
+  customFootHtml: |
+    <footer style="text-align:center; padding: 2rem 1rem; font-size: 13px; color: #9ca3af; border-top: 1px solid #e5e7eb; margin-top: 3rem;">
+      &copy; 2026 Goletro Technologies Pvt Ltd &nbsp;·&nbsp;
+      <a href="https://goletro.com" style="color:#9ca3af; text-decoration:none;">goletro.com</a>
+      &nbsp;·&nbsp;
+      <a href="https://goletro.com/contact" style="color:#9ca3af; text-decoration:none;">Support</a>
+    </footer>
