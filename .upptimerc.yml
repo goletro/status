@@ -5,7 +5,7 @@ sites:
   - name: GoPanel App
     url: https://app.goletro.com
 
-  - name: GoPanel Status (DB + Redis)
+  - name: GoPanel API & Database
     url: https://app.goletro.com/api/status
     expectedStatusCodes:
       - 200
@@ -27,15 +27,22 @@ notification:
     chatId: $TELEGRAM_CHAT_ID
 
 assignees:
-  - goletro
+  - kuldeep-pawar12
 
 status-website:
   cname: status.goletro.com
   name: Goletro Status
-  introTitle: GoPanel Service Status
-  introMessage: Real-time uptime monitoring for GoPanel and its services.
+  logoUrl: https://goletro.com/logo.svg
+  introTitle: "**GoPanel** Service Status"
+  introMessage: Real-time uptime monitoring for GoPanel and its services. Updated every 5 minutes.
   navbar:
     - title: GoPanel App
       href: https://app.goletro.com
     - title: Website
       href: https://goletro.com
+    - title: Support
+      href: https://goletro.com/contact
+  customBodyHtml: |
+    <style>
+      .subscribe-form, .notification-form, [class*="subscribe"], [class*="Subscribe"] { display: none !important; }
+    </style>
