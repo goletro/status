@@ -2,10 +2,10 @@ owner: goletro
 repo: status
 
 sites:
-  - name: GoPanel App
+  - name: App
     url: https://app.goletro.com
 
-  - name: GoPanel API & Database
+  - name: API & Services
     url: https://app.goletro.com/api/status
     expectedStatusCodes:
       - 200
@@ -13,11 +13,12 @@ sites:
   - name: Goletro Website
     url: https://goletro.com
 
-  - name: Supabase Database
+  - name: Database
     url: https://qgtmocvjdtohyqwpgwsh.supabase.co/rest/v1/
     expectedStatusCodes:
       - 200
       - 401
+
 
 notification:
   email:
@@ -33,10 +34,10 @@ status-website:
   cname: status.goletro.com
   name: Goletro Status
   logoUrl: https://goletro.com/logo.svg
-  introTitle: "**GoPanel** Service Status"
-  introMessage: Real-time uptime monitoring for GoPanel and its services. Updated every 5 minutes.
+  introTitle: "**Goletro** Service Status"
+  introMessage: Real-time uptime monitoring for Goletro and its services. Updated every 5 minutes.
   navbar:
-    - title: GoPanel App
+    - title: Goletro App
       href: https://app.goletro.com
     - title: Website
       href: https://goletro.com
