@@ -13,12 +13,6 @@ sites:
   - name: Goletro Website
     url: https://goletro.com
 
-  - name: Database
-    url: https://qgtmocvjdtohyqwpgwsh.supabase.co/rest/v1/
-    expectedStatusCodes:
-      - 200
-      - 401
-
 notification:
   email:
     to: $NOTIFICATION_EMAIL
