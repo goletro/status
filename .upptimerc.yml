@@ -13,9 +13,6 @@ sites:
   - name: Goletro Website
     url: https://goletro.com
 
-  - name: Alert Test (delete me)
-    url: https://this-domain-does-not-exist-goletro-test.invalid
-
 notification:
   email:
     to: $NOTIFICATION_EMAIL
